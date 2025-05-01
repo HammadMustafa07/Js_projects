@@ -37,7 +37,7 @@ let winPatterns = [
 
 const checkWinner = () => {
   for (let i = 0; i < winPatterns.length; i++) {
-    pattern = winPatterns[i];
+    let pattern = winPatterns[i];
     let postVal1 = boxes[pattern[0]].innerText;
     let postVal2 = boxes[pattern[1]].innerText;
     let postVal3 = boxes[pattern[2]].innerText;
@@ -64,4 +64,6 @@ let newGame = () => {
     h1.innerText = ""
 };
 
-newGameBtn.addEventListener("click", newGame);
+newGameBtn.addEventListener("click", () => {
+  newGame();
+});
