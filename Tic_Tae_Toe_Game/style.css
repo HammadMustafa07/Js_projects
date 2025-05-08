@@ -105,7 +105,7 @@ h1 {
   transform: scale(1.05);
 }
 
-.grid {
+#grid {
   display: grid;
   grid-template-columns: repeat(3, 120px); 
   grid-template-rows: repeat(3, 120px);

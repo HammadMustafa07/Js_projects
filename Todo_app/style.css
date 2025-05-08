@@ -117,3 +117,7 @@ body {
 #taskList li svg {
   fill: #e74c3c;
 }
+
+#removeTodo {
+  cursor: pointer;
+}
