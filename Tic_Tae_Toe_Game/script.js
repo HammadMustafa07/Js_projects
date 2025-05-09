@@ -1,5 +1,5 @@
 let boxes = document.querySelectorAll(".boxes");
-let container = document.querySelector(".grid");
+let container = document.querySelector("#grid");
 let h1 = document.querySelector("h1");
 let newGameBtn = document.querySelector(".new-game-btn");
 
