@@ -1,97 +1,26 @@
-/* ----------------------------------------Light Theme g------------------------------------- */
-
-
-/* body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f4f4f4;
-  color: #333;
-  margin: 0;
-  padding: 40px;
-}
-
-h1 {
-  font-size: 2.8em;
-  color: #2c3e50; 
-  margin-bottom: 25px;
-}
-
-.new-game-btn {
-  padding: 14px 28px;
-  font-size: 1.1em;
-  background-color: #3498db; 
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-bottom: 25px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.2s ease;
-}
-
-.new-game-btn:hover {
-  background-color: #2980b9;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 90px);
-  grid-template-rows: repeat(3, 90px);
-  gap: 8px;
-}
-
-.boxes {
-  width: 90px;
-  height: 90px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.2em;
-  color: #555;
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  transition: background-color 0.3s ease, box-shadow 0.2s ease;
-}
-
-.boxes:hover {
-  background-color: #eee;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-} */
-
-
-
-
-/* ----------------------------------------Light Theme g--------------------------------------------------- */
-
-
 body {
   font-family: 'Arial', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #222; 
-  color: #eee; 
+  background-color: #222;
+  color: #eee;
   margin: 0;
   padding: 30px;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5rem;
   color: #ffc107;
   margin-bottom: 30px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 .new-game-btn {
-  padding: 12px 24px;
-  font-size: 1.1em;
-  background-color: #007bff; 
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 8px;
@@ -107,20 +36,21 @@ h1 {
 
 #grid {
   display: grid;
-  grid-template-columns: repeat(3, 120px); 
-  grid-template-rows: repeat(3, 120px);
-  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
 }
 
 .boxes {
-  width: 120px;
-  height: 120px;
-  background-color: #333; 
+  aspect-ratio: 1 / 1;
+  background-color: #333;
   border: 2px solid #555;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.5em;
+  font-size: 2rem;
   color: #eee;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -131,48 +61,23 @@ h1 {
   transform: scale(1.02);
 }
 
+/* Responsive adjustments for smaller screens */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
 
+  .new-game-btn {
+    font-size: 0.9rem;
+    padding: 0.6em 1.2em;
+  }
 
-/* -----------------------------------------normal Theme c --------------------------------------------------------------------- */
+  #grid {
+    gap: 8px;
+    max-width: 90vw;
+  }
 
-/* body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  .boxes {
+    font-size: 1.5rem;
+  }
 }
-
-h1 {
-  text-align: center;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
-  gap: 5px;
-  width: max-content;
-  margin: 50px auto;
-}
-
-.boxes {
-  width: 100px;
-  height: 100px;
-  background-color: #f0f0f0;
-  border: 2px solid #333;
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.new-game-btn {
-  height: 40px;
-  width: 120px;
-  background-color: black;
-  color: white;
-  border: 2px solid white;
-  border-radius: 10px;
-} */
